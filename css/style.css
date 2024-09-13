@@ -31,10 +31,11 @@ header {
 nav {
     background-color: #F29F05;
     text-align: center;
+    padding: 4px;
 }
 
-nav>a {
-    margin: 8px;
+nav > a {
+    margin: 20px;
     text-decoration: none;
     color: black;
 }
@@ -54,7 +55,14 @@ nav>a {
     background-color: black;
     font-size: 12px;
     padding-bottom: 10px;
-    padding-top: 5px;
+    padding-top: 10px;
+}
+
+.zap {
+    position: fixed;
+    z-index: 3;
+    right: 0px;
+    bottom: 100px;
 }
 
 .rodape > a {

@@ -1,0 +1,13 @@
+TB 250 ANALÓGICO
+TB 3000 DIGITAL (COM LAUDO)
+CARREGADOR INDUSTRIAL
+MULTIMETRO DIGITAL
+SABE MEMORY OBD2
+
+
+aqui eu consigo testar
+Tensão (Voltagem)
+CCA (Corrrente de partida)
+Resistencia
+Carga
+Saúde da Bateria

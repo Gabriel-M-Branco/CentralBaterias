@@ -1,8 +1,12 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     width: 100vw;
     height: calc(100vh * 5);
     margin: 0;
-    background-color: #0B1340;
+    background-color: rgb(31, 31, 31);
     display: flex;
     flex-direction: column;
 }
@@ -29,14 +33,16 @@ nav {
     text-align: center;
 }
 
-nav > a {
-    margin: 6px;
+nav>a {
+    margin: 8px;
     text-decoration: none;
     color: black;
 }
 
 .rodape {
+    border-top: 1px solid #a9a9a9;
     width: 100vw;
+    height: 80px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -46,11 +52,27 @@ nav > a {
     color: white;
     z-index: 1;
     background-color: black;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.rodape > a {
+    color: #d3d3d3;
 }
 
 .link-rodape {
+    text-align: center;
     width: 100px;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     text-decoration: none;
+}
+
+span {
+    color: lightgray;
+}
+
+p {
+    margin: 0;
 }

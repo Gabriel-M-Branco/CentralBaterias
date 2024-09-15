@@ -4,7 +4,7 @@
 
 body {
     width: 100vw;
-    height: calc(100vh * 5);
+    height: 100vh;
     margin: 0;
     background-color: rgb(31, 31, 31);
     display: flex;
@@ -25,7 +25,12 @@ header {
 }
 
 .corpo {
+    display: flex;
+    width: 100%;
+    height: calc(84vh);
+    background-color: rgb(36, 36, 36);
     margin-top: 16vh;
+    justify-content: center;
 }
 
 nav {
@@ -58,7 +63,15 @@ nav > a {
     padding-top: 10px;
 }
 
-.zap {
+.link-whatsapp {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    right: -20px;
+    bottom: 100px;
+}
+
+.whatsapp {
     position: fixed;
     z-index: 3;
     right: 0px;
@@ -83,4 +96,8 @@ span {
 
 p {
     margin: 0;
+}
+
+.mapa {
+    margin-top: 20px;
 }

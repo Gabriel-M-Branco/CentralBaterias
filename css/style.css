@@ -4,7 +4,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 10000px;
     margin: 0;
     background-color: rgb(31, 31, 31);
     display: flex;
@@ -100,4 +100,20 @@ p {
 
 .mapa {
     margin-top: 20px;
+}
+
+.corpo2 {
+    background-color: #242424;
+    text-align: left;
+}
+.corpo2  > p{
+    color: white;
+    font-size: 12px;
+    margin: 8px;
+    margin-bottom: 16px;
+}
+
+.titulo-2 {
+    text-align: center;
+    color: #F29F05;
 }

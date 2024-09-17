@@ -4,17 +4,18 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     margin: 0;
     background-color: rgb(31, 31, 31);
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .div-logo {
     display: flex;
     justify-content: center;
 }
+
 
 header {
     position: fixed;
@@ -56,6 +57,7 @@ nav {
     text-decoration: none;
     color: black;
 }
+
 
 .rodape {
     border-top: 1px solid #303030;
@@ -153,6 +155,7 @@ iframe {
 }
 
 .content {
+    color: white;
     margin-top: 116px;
     height: calc(80% - 90px);
     display: none;
@@ -160,4 +163,22 @@ iframe {
 
 .corpo {
     display: none;
+}
+
+.marcas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap;
+    color: #F29F05;
+    text-align: center;
+}
+.marcas > img{
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    margin: 8px;
+    width: 150px;
+    height: 80px;
+
 }

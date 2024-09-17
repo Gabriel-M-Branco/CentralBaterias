@@ -19,7 +19,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 116px;
     background-color: black;
     z-index: 1;
 }
@@ -60,7 +60,7 @@ nav {
 .rodape {
     border-top: 1px solid #303030;
     width: 100vw;
-    height: 12.16vh;
+    height: 90px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,7 @@ nav {
     bottom: 100px;
 }
 
-.rodape > a {
+.rodape>a {
     color: #d3d3d3;
 }
 
@@ -136,7 +136,7 @@ p {
     text-align: left;
 }
 
-#corpoSobre > p {
+#corpoSobre>p {
     color: white;
     font-size: 12px;
     margin: 8px;
@@ -149,8 +149,8 @@ p {
 }
 
 .content {
-    margin-top: calc(17.38vh);
-    height: 71.95%;
+    margin-top: 116px;
+    height: calc(80% - 90px);
     display: none;
 }
 

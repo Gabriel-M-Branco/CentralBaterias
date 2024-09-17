@@ -114,6 +114,10 @@ p {
     margin-top: 20px;
 }
 
+iframe {
+    border-radius: 4px;
+}
+
 .carrossel {
     width: 200px;
     height: 200px;

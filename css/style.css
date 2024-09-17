@@ -149,7 +149,7 @@ p {
 }
 
 .content {
-    margin-top: 16vh;
+    margin-top: calc(17.38vh);
     height: 71.95%;
     display: none;
 }

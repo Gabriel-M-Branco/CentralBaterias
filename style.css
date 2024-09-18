@@ -1,0 +1,226 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+<<<<<<< HEAD
+=======
+.div-logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 116px;
+    background-color: black;
+    z-index: 1;
+}
+
+#corpoHome {
+    display: flex;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: #F29F05;
+    text-align: center;
+    padding: 4px;
+}
+
+.lista-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-nav li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.lista-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.rodape {
+    border-top: 1px solid #303030;
+    width: 100vw;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    z-index: 1;
+    background-color: black;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.link-whatsapp {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    right: -20px;
+    bottom: 100px;
+}
+
+.whatsapp {
+    position: fixed;
+    z-index: 3;
+    right: 0px;
+    bottom: 100px;
+}
+
+.rodape>a {
+    color: #d3d3d3;
+}
+
+.link-rodape {
+    text-align: center;
+    width: 100px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+>>>>>>> c1a098e595209bb9be1cb568ef7f75175d6842e5
+span {
+    color: lightgray;
+}
+
+p {
+    margin: 0;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    align-content: center;
+    background-color: black;
+}
+
+.div-logo {
+    height: 80%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header {
+    display: flex;
+    background-color: #F29F05;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.corpo {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrossel {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel-items img {
+    width: 300px;
+    height: 200px;
+}
+
+.sobre {
+    color: white;
+}
+
+.link-whatsapp {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    right: -20px;
+    bottom: 115px;
+}
+
+.rodape {
+    display: flex;
+    border-top: 1px solid #303030;
+    width: 100vw;
+    min-height: 130px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    font-size: 12px;
+}
+
+<<<<<<< HEAD
+.rodape > a {
+    color: #d3d3d3;
+=======
+.content {
+    color: white;
+    margin-top: 116px;
+    height: calc(80% - 90px);
+    display: none;
+}
+
+.corpo {
+    display: none;
+}
+
+.marcas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap;
+    color: #F29F05;
+    text-align: center;
+}
+.marcas > img{
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    margin: 8px;
+    width: 150px;
+    height: 80px;
+
+>>>>>>> c1a098e595209bb9be1cb568ef7f75175d6842e5
+}

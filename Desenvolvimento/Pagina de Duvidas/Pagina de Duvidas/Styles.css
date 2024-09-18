@@ -1,0 +1,170 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #30323D; /* Cor de fundo da página */
+    font-family: 'Poppins', sans-serif;
+    color: #f1e9da; /* Cor do texto geral, incluindo "Nossa equipe está pronta para ajudá-lo!" */
+    line-height: 1.6;
+}
+
+/* Central de Ajuda - Layout */
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #181960; /* Cor de fundo da seção de FAQ */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header h1 {
+    text-align: center;
+    color: #f1e9da; /* Cor do título "Dúvidas" */
+    margin-bottom: 20px;
+}
+
+.faq-category h2 {
+    color: #f1e9da; /* Cor dos subtítulos das categorias */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffa639; /* Cor das linhas abaixo dos subtítulos */
+    padding-bottom: 5px;
+}
+
+/* FAQ Accordion Styles */
+.wrapper {
+    background-color: #f1e9da; /* Cor de fundo das caixas de texto (Accordion) */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toggle {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #000000; /* Cor inicial do texto dos botões do Accordion */
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.toggle:hover {
+    color: #ffa639; /* Cor do texto dos botões do Accordion ao passar o mouse */
+}
+
+.icon {
+    transition: transform 0.3s ease;
+    color: #000000; /* Cor do ícone "plus" e "minus" */
+}
+
+.icon.fa-minus {
+    transform: rotate(180deg);
+}
+
+.content {
+    font-size: 14px;
+    color: #555; /* Cor do texto dentro das caixas de conteúdo */
+    text-align: justify;
+    line-height: 24px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+/* Contact Section */
+.contact-prompt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-prompt h3 {
+    color: #ffa639; /* Cor do título "Tem alguma dúvida ou precisa de mais informações?" */
+    margin-bottom: 10px;
+}
+
+.contact-prompt p {
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #15e638; /* Cor de fundo do botão de contato */
+    color: rgb(255, 255, 255); /* Cor do texto do botão de contato */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button i {
+    margin-right: 10px;
+}
+
+.contact-button:hover {
+    background-color: #6aa13d; /* Cor de fundo do botão de contato ao passar o mouse */
+}
+
+/* Estilo para todos os links na página */
+a {
+    color: #111130; /* Cor inicial dos links não visitados */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+a:visited {
+    color: #0084e9; /* Cor dos links após serem clicados */
+}
+
+a:hover {
+    color: #05299e; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilo específico para links na seção FAQ */
+.faq-section a {
+    color: #111130; /* Cor inicial dos links na seção FAQ */
+}
+
+.faq-section a:visited {
+    color: #0084e9; /* Cor dos links após serem clicados na seção FAQ */
+}
+
+/* Estilização do botão de contato */
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-button:hover {
+    background-color: #128C7E;
+}

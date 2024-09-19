@@ -11,7 +11,6 @@ body {
     color: white;
 }
 
-
 .div-logo img {
     height: 70px;
     width: auto;
@@ -49,28 +48,24 @@ header {
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.mapa {
-    width: 80%;
-}
-
-.mapa iframe {
-    width: 100%;
+.corpo > h1 {
+    color: #F29F05;
 }
 
 .rodape {
-    border-top: 1px solid #303030;
+    border-top: 1px solid darkgray;
     width: 100vw;
     height: 90px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    bottom: 0px;
     color: white;
-    z-index: 1;
     background-color: black;
     font-size: 12px;
     padding-bottom: 10px;
@@ -87,7 +82,7 @@ header {
     margin: 0;
     padding: 0;
     right: -20px;
-    top: 150px;
+    top: 160px;
     z-index: 4;
 }
 
@@ -104,39 +99,23 @@ iframe {
     margin: 12px;
 }
 
-.carrossel {
-    width: 100%;
-    height: 380px;
-    overflow: hidden;
-    position: relative;
-}
-
-.carrossel-items {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
 .tipos {
     min-width: 200px;
+    max-height: 350px;
     background-color: #f0f0f0;
     text-align: justify;
-    font-size: 12px;
     color: black;
     border-radius: 5px;
     text-align: center;
+    padding: 6px;
 }
 
 .tipos > img {
     width: 50%;
-}
-
-.titulo-2 {
-    text-align: center;
-    color: #F29F05;
+    height: 170px;
 }
 
 .marcas {
-    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -155,22 +134,89 @@ iframe {
 }
 
 .accordion {
-    padding: 12px;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: rgb(23, 23, 23);
 }
 
-.accordion>h1 {
+.accordion>h1 {   
     text-align: center;
+    color: #F29F05;
+    padding: 2px;
+    border-bottom: 2px solid #F29F05;
 }
 
 .accordion>h2 {
-    margin: 12px;
+    margin-left: 12px;
     font-size: 20px;
-    color: #F29F05;
-
+    color: white;
 }
 
 .accordion-item {
-    margin: 12px;
+    margin: 0;
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #ddd !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-collapse {
+    border-top: 1px solid #bebebe;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.duvidas {
+    margin-top: 20px;
+    text-align: center;
+    color: #F29F05;
+}
+
+.duvidas p {
+    margin: 0;
+    color: white;
+}
+
+.quem-somos {
+    padding: 12px;
+    margin-top: 14px;
+    text-align: justify;  
+    border-radius: 6px;
+    background-color: rgb(23, 23, 23); 
+}
+
+.quem-somos > h1 {
+    text-align: center;
+    color: #F29F05;
+}
+
+.quem-somos > img {
+    width: 320px; 
+    border-radius: 4px;
+}
+
+.your-class, .your-class2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.your-class .slick-slide img, .your-class2 .slick-slide img {
+    width: 100%;
+    height: auto;
+}
+

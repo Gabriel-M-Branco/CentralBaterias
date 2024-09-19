@@ -1,0 +1,99 @@
+body {
+    margin: 0;  
+    height: 100vh;
+    background: radial-gradient(circle, #0b1226, #020517);
+}
+
+.sobre{
+    margin: 0px;
+
+}
+
+.hist-1{
+    display: flex;
+    background-color: aliceblue;
+    margin-bottom: -27px;
+}
+
+.hist { 
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.test{
+    background-color: aliceblue;
+    margin: 0PX;
+}
+
+.centralbat{
+    mask-image:linear-gradient(to right,transparent, black);
+    display: block;
+    position: relative;
+}
+
+.hist{
+    font-size: larger;
+}
+.Equip-1{
+    display: block;
+    margin: 0px;
+    background-color: #ffb800;
+}
+
+.equip{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.Hist-0{
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    left: 44%;
+}
+
+.Equipamentos{
+    display: flex;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.TCAA{
+    border: #101b39 solid 1px;
+    background-color: #101b39;
+    border-radius: 10px;
+    padding: 2rch 2rch 2rch 2rch;
+}
+
+.EspcTb{
+    border: #ffb800 solid 1px;
+    background-color: #ffb800;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.ImgTb{
+    display: flex;
+    justify-content: center;
+}
+
+.tb3000{
+    display: block;
+}
+
+.nometb{
+    text-align: center;
+    color: aliceblue;
+    text-decoration:solid;
+    text-decoration: underline #ffb800 5px;
+}
+
+.sobretb{
+    color: aliceblue;
+    text-align: center;
+}

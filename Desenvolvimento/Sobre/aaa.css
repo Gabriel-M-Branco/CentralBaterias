@@ -1,0 +1,41 @@
+body {
+    margin: 0;  
+    height: 100vh;
+    background: radial-gradient(circle, #0b1226, #020517);
+}
+
+.sobre{
+    margin: 0px;
+    display: flex;
+}
+
+.test{
+    background-color: aliceblue;
+    margin: 0PX;
+    display: flex;
+}
+
+.Hist-0{
+    margin: 0px;    
+    position: absolute;
+    text-align: center;
+    left: 44%;
+}
+
+.hist {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.centralbat{
+    mask-image:linear-gradient(to right,transparent, black);
+    display: block;
+    position: relative;
+}
+
+
+.Equip-1{
+    margin: 0px;
+    background-color: #ffb800;
+}

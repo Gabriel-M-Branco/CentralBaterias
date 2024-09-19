@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 
 <body>
@@ -19,44 +22,38 @@
         </div>
 
         <div class="links">
-            <a href="#corpo">Início</a>
-            <a href="#tipos">Baterias</a>
-            <a href="#FAQ">FAQ</a>
+            <a class="links2" data-target="#corpo">Início</a>
+            <a class="links2" data-target="#marcas">Baterias</a>
+            <a class="links2" data-target="#faq">FAQ</a>
         </div>
+
     </header>
-
     <div class="corpo" id="corpo">
-        <h1>Central das Baterias</h1>
-        <p>Entrega, Venda e Instalação de Baterias</p>
-        <div class="carrossel swiper" id="carrossel">
-            <h2>Tipos de Baterias</h2>
-            <div class="swiper-wrapper carrossel-items">
-                <div class="swiper-slide tipos">
-                    <img src="img/BateriaSLI.png" alt="bateria-sli">
-                    <h3><b>SLI</b></h3>
-                    <p>Fornecem uma alta corrente por um curto período de tempo, o que é necessário para dar arranque ao
+        <h1><b>Central das Baterias</b></h1>
+        <p>Entregas, Venda e Instalação de Baterias</p>
+
+        <div class="your-class">
+            <div>
+                <img src="img/BateriaSLI.png" alt="bateria-sli">
+                <h3><b>SLI</b></h3>
+                <p>Fornecem uma alta corrente por um curto período de tempo, o que é necessário para dar arranque ao
                     motor a combustão.</p>
-                </div>
-
-                <div class="swiper-slide tipos">
-                    <img src="img/BateriaEFB.png" alt="bateria-efb">
-                    <h3><b>EFB</b></h3>
-                    <p>Sigla para "Enhanced Flooded Battery", ou "Bateria Inundada Aprimorada", são baterias
-                        tradicionais com
-                        mecanismos mais avançados. São indicadas para veículos com sistema de start-stop simples.</p>
-                </div>
-
-                <div class="swiper-slide tipos">
-                    <img src="img/bateria-agm.png" alt="bateria-egm">
-                    <h3><b>AGM</b></h3>
-                    <p>São baterias com maior capacidade de fornecer energia constante e estável para sistemas elétricos
-                        mais complexos. São usadas em veículos com turbo eletrônico e freio regenerativo, por exemplo
-                    </p>
-                </div>
+            </div>
+            <div>
+                <img src="img/BateriaEFB.png" alt="bateria-efb">
+                <h3><b>EFB</b></h3>
+                <p>são baterias tradicionais com mecanismos mais avançados. São indicadas para veículos com sistema
+                    de start-stop simples.</p>
+            </div>
+            <div>
+                <img src="img/bateria-agm.png" alt="bateria-agm">
+                <h3><b>AGM</b></h3>
+                <p>São baterias com maior capacidade de fornecer energia constante e estável para sistemas elétricos
+                    mais complexos. São usadas em veículos com turbo eletrônico e freio regenerativo.</p>
             </div>
         </div>
 
-        <div class="marcas">
+        <div class="marcas" id="marcas">
             <h1><b>As Melhores Marcas</b></h1>
             <img src="img-logos/bosch-logo.webp" alt="">
             <img src="img-logos/extranger-logo.png" alt="">
@@ -67,20 +64,17 @@
             <img src="img-logos/zetta-logo2.jpeg" alt="">
         </div>
 
-        <div id="FAQ">
-
-            <div class="accordion faq" id="accordionExample">
-                <h1><b>FAQ</b></h1>
-
-                <h2>Sobre a Central de Baterias</h2>
+        <div id="faq">
+            <div class="accordion" id="accordeonFaq">
+                <h1><b>Perguntas Frequentes</b></h1>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseUm" aria-expanded="true" aria-controls="collapseUm">
                             Com quais ferramentas nós trabalhamos?
                         </button>
                     </h2>
-                    <div id="collapseUm" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseUm" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
                         <div class="accordion-body">
                             Trabalhamos com Ferramentas Modernas: Carregador Industrial, teste de bateria digital, teste
                             de bateria analógico, teste de altenador e motor de partida digital e teste de alternador,
@@ -88,8 +82,6 @@
                         </div>
                     </div>
                 </div>
-
-                <h2>Nossos Serviços:</h2>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -97,7 +89,7 @@
                             Quais são os serviços que oferecemos?
                         </button>
                     </h2>
-                    <div id="collapseDois" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseDois" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
                         <div class="accordion-body">
                             Oferecemos uma gama completa de serviços de bateria, desde a venda até a instalação e
                             manuntenção
@@ -111,7 +103,7 @@
                             Como posso agendar um serviço?
                         </button>
                     </h2>
-                    <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
                         <div class="accordion-body">
                             Você pode agendar nossos serviços online através do nosso site ou entrando em contato
                             diretamente pelo telefone.
@@ -122,31 +114,43 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseQuatro">
-                            O Horário de funcionamento da loja?
+                            Qual o Horário de funcionamento da loja?
                         </button>
                     </h2>
-                    <div id="collapseQuatro" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseQuatro" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
                         <div class="accordion-body">
                             Funcionamos de segunda a sexta, das 8h às 18h, e aos sábados das 8h às 13h
                         </div>
                     </div>
                 </div>
+                <div class="duvidas">
+                    <h4>Dúvidas?</h4>
+                    <p> Você pode nos contatar por meio de telefone, e-mail ou diretamente via WhatsApp.</p>
+                </div>
 
-                <h2>Dúvidas?</h2>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseQuinto" aria-expanded="false" aria-controls="collapseQuinto">
-                            Alguma Dúvida ou precisa de mais alguma informação?
-                        </button>
-                    </h2>
-                    <div id="collapseQuinto" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Você pode nos contatar pelo telefone, e-mail ou diretamente pelo WhatsApp
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="quem-somos">
+            <h1>Quem somos</h1>
+            <p>
+                A história da <b>Central Baterias</b> teve início em 1998, quando João Zanutti e seu irmão Geraldo
+                fundaram uma
+                pequena montadora de baterias em Cuiabá-MT. Com o passar do tempo, João continuou a operação, expandindo
+                o negócio para uma fábrica autosuficiente dedicada à montagem e venda de baterias na região. Vários
+                membros da família, incluindo o neto Jean Carlos, contribuíram para o crescimento da empresa. Em 2017,
+                as atividades foram encerradas, mas em 2024, incentivado por seu avô, Jean Carlos reabriu a <b>Central
+                    Baterias</b> no local original, com foco em oferecer as melhores marcas e serviços aos clientes.
+            </p>
+
+            <div class="your-class2">
+                <div>
+                    <img src="img/fotoFrente.jpeg" alt="foto da frente">
+                </div>
+                <div>
+                    <img src="img/fotoSalao.jpeg" alt="foto do interior da loja">
                 </div>
             </div>
+
         </div>
 
         <div class="link-whatsapp">
@@ -154,6 +158,7 @@
                 <img src="img/zap.png" alt="whatsapp" width="100px">
             </a>
         </div>
+
         <div class="mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480.3228152370094!2d-56.09296353533863!3d-15.613938582344826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db181b5d4607d%3A0xabe71652763f4512!2sCentral%20Baterias%20Cuiab%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1726421053514!5m2!1spt-BR!2sbr"
@@ -174,23 +179,32 @@
             crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="/js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.your-class').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            });
 
-        <script>
-            var swiper = new Swiper('.swiper', {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
+            $(document).ready(function () {
+
+                $('.your-class2').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
             });
         </script>
+
+
     </div>
 </body>
 

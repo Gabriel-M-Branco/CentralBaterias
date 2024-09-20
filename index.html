@@ -21,17 +21,25 @@
         </div>
 
         <div class="links">
-            <a class="links2" data-target="#corpo">Início</a>
-            <a class="links2" data-target="#marcas">Baterias</a>
-            <a class="links2" data-target="#faq">FAQ</a>
+            <a class="links2" data-target="#corpo">
+                <p><b>Início</b></p>
+            </a>
+            <a class="links2" data-target="#marcas">
+                <p><b>Baterias</b></p>
+            </a>
+            <a class="links2" data-target="#faq">
+                <p><b>FAQ</b></p>
+            </a>
         </div>
 
     </header>
     <div class="corpo" id="corpo">
-        <h1><b>Central das Baterias</b></h1>
-        <p>Entregas, Venda e Instalação de Baterias</p>
 
-        <div class="your-class">
+        <div class="cabecalho">
+            <h1><b>Entrega e Venda de Baterias</b></h1>
+        </div>
+        <h1><b>Baterias</b></b></h1>
+        <div class="div-carrossel">
             <div>
                 <img src="img/BateriaSLI.png" alt="bateria-sli">
                 <h3><b>SLI</b></h3>
@@ -70,7 +78,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseUm" aria-expanded="true" aria-controls="collapseUm">
-                            Com quais ferramentas nós trabalhamos?
+                            <b>Com quais ferramentas nós trabalhamos?</b>
                         </button>
                     </h2>
                     <div id="collapseUm" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
@@ -85,7 +93,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseDois" aria-expanded="false" aria-controls="collapseDois">
-                            Quais são os serviços que oferecemos?
+                            <b>Quais são os serviços que oferecemos?</b>
                         </button>
                     </h2>
                     <div id="collapseDois" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
@@ -99,7 +107,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
-                            Como posso agendar um serviço?
+                            <b>Como posso agendar um serviço?</b>
                         </button>
                     </h2>
                     <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
@@ -109,11 +117,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item accordion-ultimo-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseQuatro">
-                            Qual o Horário de funcionamento da loja?
+                            <b>Qual o Horário de funcionamento da loja?</b>
                         </button>
                     </h2>
                     <div id="collapseQuatro" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
@@ -123,7 +131,7 @@
                     </div>
                 </div>
                 <div class="duvidas">
-                    <h4>Dúvidas?</h4>
+                    <h2><b>Dúvidas?</b></h2>
                     <p> Você pode nos contatar por meio de telefone, e-mail ou diretamente via WhatsApp.</p>
                 </div>
 
@@ -137,19 +145,20 @@
                 pequena montadora de baterias em Cuiabá-MT. Com o passar do tempo, João continuou a operação, expandindo
                 o negócio para uma fábrica autosuficiente dedicada à montagem e venda de baterias na região. Vários
                 membros da família, incluindo o neto Jean Carlos, contribuíram para o crescimento da empresa. Em 2017,
-                as atividades foram encerradas, mas em 2024, incentivado por seu avô, Jean Carlos reabriu a <b>Central
-                    Baterias</b> no local original, com foco em oferecer as melhores marcas e serviços aos clientes.
+                as atividades foram encerradas, mas em 2024, incentivado por seu avô, Jean Carlos reabriu a <b>Central Baterias</b> no local original, com foco em oferecer as melhores marcas e serviços aos clientes.
             </p>
+
+            <div class="fotos">
+                <div>
+                    <img src="img/fotoFrente.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="img/fotoSalao.jpeg" alt="">
+                </div>
+            </div>
         </div>
 
-        <div class="fotos">
-            <div>
-                <img src="img/fotoFrente.jpeg" alt="">
-            </div>
-            <div>
-                <img src="img/fotoSalao.jpeg" alt="">
-            </div>
-        </div>
+
 
         <div class="link-whatsapp">
             <a href="https://wa.me/message/ACFRVLCFO6AXH1" target="_blank">
@@ -171,6 +180,8 @@
             <a href="tel:+5565992502060">(65) 99250-2060</a>
             <span>Copyright &copy; 2024 Todos os Direitos Reservados</span>
         </div>
+
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -184,7 +195,7 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.your-class').slick({
+            $('.div-carrossel').slick({
                 Infinity: true,
 
             });

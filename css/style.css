@@ -5,7 +5,6 @@
 body {
     width: 100vw;
     margin: 0;
-
     display: flex;
     flex-direction: column;
     color: white;
@@ -20,7 +19,7 @@ header {
     width: 100%;
     height: 90px;
     background-color: black;
-    z-index: 2;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@ header {
 
 .links a {
     text-decoration: none;
-    color: #F29F05;
+    color: #F2CB05;
     font-size: 20px;
 }
 
@@ -48,13 +47,31 @@ header {
     flex-direction: column;
     align-items: center;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-.corpo>h1 {
-    color: #F29F05;
-    margin-top: 35px;
+h1 {
+    color: #F2CB05;
+    font-size: 32px;
+}
+
+.cabecalho {
+    background-image: url("/img/fotomecanico.png");
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    font-size: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.cabecalho > h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 6px black;
 }
 
 .rodape {
@@ -82,7 +99,7 @@ header {
     margin: 0;
     padding: 0;
     right: -20px;
-    top: 160px;
+    top: 100px;
     z-index: 4;
 }
 
@@ -94,34 +111,26 @@ p {
     margin: 0;
 }
 
+.mapa {
+    width: 95%;
+}
+
 iframe {
+    margin-bottom: 14px;
     border-radius: 5px;
-    margin: 12px;
+    width: 100%;
 }
 
-.tipos {
-    min-width: 200px;
-    max-height: 350px;
-    background-color: #f0f0f0;
-    text-align: justify;
-    color: black;
-    border-radius: 5px;
-    text-align: center;
-    padding: 6px;
-}
-
-.tipos>img {
-    width: 50%;
-    height: 170px;
-}
 
 .marcas {
+    width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    color: #F29F05;
+    color: #F2CB05;
     text-align: center;
+    margin-bottom: 14px;
 }
 
 .marcas>img {
@@ -130,29 +139,36 @@ iframe {
     margin: 8px;
     width: 150px;
     height: 80px;
-
 }
 
-.accordion {
+#faq {
+    width: 95%;
     border-radius: 5px;
     background-color: rgb(23, 23, 23);
 }
 
-.accordion>h1 {
-    text-align: center;
-    color: #F29F05;
-    padding: 2px;
-    border-bottom: 2px solid #F29F05;
+.accordion {
+    padding-top: 20px;
+    border-radius: 5px;
 }
 
-.accordion>h2 {
-    margin-left: 12px;
-    font-size: 20px;
-    color: white;
+.accordion-ultimo-item {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.accordion > h1 {
+    text-align: center;
+    color: #F2CB05;
+    margin-bottom: 20px;
+    padding: 2px;
+    border-bottom: 2px solid #F2CB05;
 }
 
 .accordion-item {
     margin: 0;
+    border-left: none;
+    border-right: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -168,6 +184,7 @@ iframe {
     color: #000 !important;
     box-shadow: none !important;
     outline: none !important;
+    border-radius: 5px;
 }
 
 .accordion-button:focus {
@@ -183,43 +200,50 @@ iframe {
 
 .duvidas {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    color: #F29F05;
+    color: #F2CB05;
 }
 
 .duvidas p {
     margin: 0;
     color: white;
+    padding: 5px;
 }
 
+
+
 .quem-somos {
+    width: 95%;
     padding: 12px;
-    margin-top: 14px;
+    margin: 14px 0px 14px 0px;
     text-align: justify;
     border-radius: 5px;
     background-color: rgb(23, 23, 23);
 }
 
 .quem-somos>h1 {
+    border-bottom: 2px solid #F2CB05;
     text-align: center;
-    color: #F29F05;
+    color: #F2CB05;
 }
 
-.corpo .your-class {
-    margin-top: 50px;
+.corpo .div-carrossel {
+    margin-top: 14px;
+    margin-bottom:14px
 }
 
-.your-class {
+.div-carrossel {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 360px;
+    width: 85%;
+    height: 365px;
     margin: 0 auto;
     border-radius: 5px;
     background-color: rgb(23, 23, 23);
 }
 
-.your-class .slick-slide {
+.div-carrossel .slick-slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +251,7 @@ iframe {
     margin: 0 20px;
 }
 
-.your-class .slick-slide img {
+.div-carrossel .slick-slide img {
     width: 80%;
     height: auto;
     margin-top: 30px;
@@ -237,14 +261,19 @@ iframe {
     margin-right: auto;
 }
 
-.your-class p,
-.your-class h3 {
+.div-carrossel p,
+.div-carrossel h3 {
     text-align: center;
 }
 
 .fotos {
     width: 85%;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+.fotos > div {
+    border-radius: 5px;
 }
 
 .fotos img {

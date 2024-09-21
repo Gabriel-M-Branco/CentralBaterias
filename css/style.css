@@ -90,11 +90,11 @@ h1 {
 }
 
 .rodape1 {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .rodape2 {
-    border-top: 1px solid darkgray;
+    padding-bottom: 10px;
 }
 
 .redes-sociais {
@@ -208,6 +208,12 @@ iframe {
     box-shadow: none !important;
     outline: none !important;
     border-radius: 5px;
+    padding-left: 0;
+}
+
+.accordion-button img {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .accordion-button:focus {
@@ -233,8 +239,6 @@ iframe {
     color: white;
     padding: 5px;
 }
-
-
 
 .quem-somos {
     width: 95%;

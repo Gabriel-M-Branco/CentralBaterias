@@ -68,7 +68,7 @@ h1 {
     margin-bottom: 14px;
 }
 
-.cabecalho > h1 {
+.cabecalho>h1 {
     color: white;
     font-size: 40px;
     text-shadow: 2px 2px 6px black;
@@ -89,13 +89,28 @@ h1 {
     padding-top: 10px;
 }
 
+.rodape1 {
+    padding-bottom: 5px;
+}
+
+.rodape2 {
+    border-top: 1px solid darkgray;
+}
+
 .redes-sociais {
-    margin: 4px 0px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
 }
 
-.rodape>a {
+.rodape3>a {
     color: lightgray;
     text-decoration: none;
 }
@@ -165,7 +180,7 @@ iframe {
     border-bottom-left-radius: 5px;
 }
 
-.accordion > h1 {
+.accordion>h1 {
     text-align: center;
     color: #F2CB05;
     margin-bottom: 20px;
@@ -238,7 +253,7 @@ iframe {
 
 .corpo .div-carrossel {
     margin-top: 14px;
-    margin-bottom:14px
+    margin-bottom: 14px
 }
 
 .div-carrossel {
@@ -280,7 +295,7 @@ iframe {
     margin-top: 20px;
 }
 
-.fotos > div {
+.fotos>div {
     border-radius: 5px;
 }
 

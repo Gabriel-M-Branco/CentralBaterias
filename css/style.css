@@ -176,7 +176,7 @@ iframe {
     margin-bottom: 14px;
 }
 
-.marcas>img {
+.marcas-img > img {
     border: 1px solid rgb(50, 50, 50);
     border-radius: 5px;
     margin: 8px;
@@ -337,7 +337,42 @@ iframe {
         display: none;
     }
 
+    .cabecalho {
+        height: 420px;
+        background-image: url(/img/foto-mecanico2.jpg);
+    }
+    .cabecalho > h1 > b {
+        font-size: 52px;
+    }
+
     .mapa iframe {
         height: 400px;
+    }
+
+    .marcas {
+        width: 100%;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .marcas-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .marcas h1  {
+        font-size: 42px;
+    }
+
+    .marcas  img{
+        margin: 16px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .marcas h1 {
+        font-size: 42px;
+        width: 100%;
+        margin: 4px;
     }
 }

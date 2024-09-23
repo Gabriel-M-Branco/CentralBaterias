@@ -67,13 +67,13 @@ h1 {
 }
 
 .cabecalho {
-    background-image: url("/img/fotomecanico.png");
+    background-image: url("/img/foto-mecanico2.png");
     background-size: cover;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 220px;
     font-size: 32px;
     flex-wrap: wrap;
     margin-bottom: 14px;
@@ -177,9 +177,10 @@ iframe {
     color: #F2CB05;
     text-align: center;
     margin-bottom: 14px;
+    padding: 15px 0;
 }
 
-.marcas-img > img {
+.marcas-img>img {
     border: 1px solid rgb(50, 50, 50);
     border-radius: 5px;
     margin: 8px;
@@ -265,7 +266,7 @@ iframe {
 
 .quem-somos {
     width: 95%;
-    padding: 12px;
+    padding: 15px;
     margin: 14px 0px 14px 0px;
     text-align: justify;
     border-radius: 5px;
@@ -289,8 +290,6 @@ iframe {
     width: 85%;
     height: 385px;
     margin: 0 auto;
-    border-radius: 5px;
-    background-color: rgb(23, 23, 23);
 }
 
 .div-carrossel .slick-slide {
@@ -316,21 +315,20 @@ iframe {
     text-align: center;
 }
 
-.fotos {
+.fotos-mobile {
     width: 85%;
     margin: 0 auto;
     margin-top: 20px;
 }
 
-.fotos>div {
+.fotos-mobile>div {
     border-radius: 5px;
 }
 
-.fotos img {
+.fotos-mobile img {
     width: 100%;
     height: auto;
 }
-
 @media only screen and (min-width: 768px) {
 
     body {
@@ -346,10 +344,11 @@ iframe {
     }
 
     .cabecalho {
-        height: 420px;
-        background-image: url(/img/foto-mecanico2.jpg);
+        width: 100%;
+        height: 350px;
     }
-    .cabecalho > h1 > b {
+
+    .cabecalho>h1>b {
         font-size: 52px;
     }
 
@@ -358,21 +357,26 @@ iframe {
     }
 
     .marcas {
-        width: 100%;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
+        width: 95%;
+        margin-top: 15px;
     }
 
     .marcas-img {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
-    .marcas h1  {
+    .marcas h1 {
         font-size: 42px;
     }
 
-    .marcas  img{
+    .marcas-img img:last-child {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .marcas img {
         margin: 16px;
         width: 250px;
         height: 150px;
@@ -381,11 +385,25 @@ iframe {
     .marcas h1 {
         font-size: 42px;
         width: 100%;
-        margin: 4px;
+        margin: 30px 0;
+    }
+
+    .carrossel-baterias {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(23, 23, 23);
+        border-radius: 5px;
+        margin: 25px 0;
+    }
+
+    .carrossel-baterias h1 {
+        margin-top: 40px;
     }
 
     .div-carrossel {
-        width: 95%;
+        width: 100%;
         height: 430px;
     }
 
@@ -411,4 +429,24 @@ iframe {
     .div-carrossel h3 {
         text-align: center;
     }
+
+    #faq {
+        padding: 0 20px;
+        margin-top: 25px;
+    }
+
+    .quem-somos {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .quem-somos p {
+        font-size: 18px;
+    }
+
+    .duvidas {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
 }

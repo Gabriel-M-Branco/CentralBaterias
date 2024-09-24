@@ -292,6 +292,7 @@ iframe {
 
 .carrossel-baterias {
     width: 95%;
+    height: 62vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -308,7 +309,7 @@ iframe {
     display: flex;
     flex-direction: column;
     width: 85%;
-    height: 375px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -360,11 +361,34 @@ iframe {
         margin: 0;
     }
 
+    .corpo {
+        margin-top: 130px;
+    }
+
     .menu-completo {
         display: flex;
+        height: 130px;
+    }
+
+    .menu-completo .div-logo {
+        margin-left: 20px;
+    }
+
+    .menu-completo .div-logo img {
+        width: 190px;
+        height: auto;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .links a {
+        text-decoration: none;
+        color: #F2CB05;
+        font-size: 25px;
         cursor: pointer;
     }
 
@@ -379,6 +403,7 @@ iframe {
     .cabecalho {
         width: 100%;
         height: 350px;
+        margin-bottom: 20px;
     }
 
     .cabecalho>h1>b {
@@ -430,6 +455,7 @@ iframe {
 
     .carrossel-baterias {
         width: 95%;
+        height: 75vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -444,7 +470,7 @@ iframe {
 
     .div-carrossel {
         width: 100%;
-        height: 430px;
+        height: 100%;
     }
 
     .div-carrossel .slick-slide {
@@ -491,7 +517,7 @@ iframe {
     .accordion-button img {
         margin-right: 20px;
     }
-    
+
     .fotos-mobile {
         display: none;
     }
@@ -524,7 +550,7 @@ iframe {
     }
 
     .rodape-desktop {
-        width: 100%;
+        width: 98.8%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -583,6 +609,7 @@ iframe {
         display: flex;
         justify-content: center;
         align-items: start;
+        text-align: center;
         width: 100%;
         margin-top: 20px;
     }

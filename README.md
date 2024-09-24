@@ -1,2 +1,2 @@
 # ProjetoCentralBaterias
-Este projeto tem como objetivo a criação de um website para um cliente real. Todo o desenvolvimento do projeto foi desenvolvido pela turma de desenvolvimento web do SENAC QUANTUM-MT
+Este projeto tem como objetivo a criação de um website para o dono da Central Baterias de Cuiabá. O projeto foi desenvolvido pela turma de desenvolvimento web do SENAC QUANTUM-MT, Gabriel Moreira Branco e Antonio Pfeifer Felfili Vinhal.
